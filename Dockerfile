@@ -1,5 +1,6 @@
 FROM jenkins/jenkins:lts
 MAINTAINER Evgeniy Cheban <mister.cheban@gmail.com>
+USER root
 
 RUN apt-get update && \
     apt-get -y install apt-transport-https \
